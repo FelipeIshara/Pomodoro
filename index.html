@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="interface">
+        <h1>Pomodoro Clock</h1>
+        <div class="session">
+            <button id="pomodoro">Pomodoro</button>
+            <button id="shortBreak">Short Break</button>
+            <button id="longBreak">Long Break</button>
+        </div>
+        
+        <div class="block">
+            <p id ="countdown"></p>
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+                <button id="pause">Pause</button>
+            </div>
+            <div>
+            <label for="Min">Pomodoro Time</label>   
+            <input min="10" value="25" placeholder="Minutes" type="number" name="Min" id="pomodoroTime">
+            </div>
+            <div>
+                <label for="Min">Short Break</label>   
+                <input min="1" value="5" placeholder="Minutes" type="number" name="Min" id="shortBreakTime">
+            </div>
+            <div>
+                <label for="Min">Long Break</label>   
+                <input min="5" value="10" placeholder="Minutes" type="number" name="Min" id="longBreakTime">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
